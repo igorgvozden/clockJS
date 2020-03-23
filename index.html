@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock">
+        <div class="display">
+            <div class="display-analogue">
+                <div class="center"></div>
+                <div class="hours">
+                    <div class="hours-dial"></div>
+                </div>
+                <div class="minutes">
+                    <div class="minutes-dial"></div>
+                </div>
+                <div class="seconds">
+                    <div class="seconds-dial"></div>
+                </div>
+                <div class="bk-display"></div>
+            </div>
+            <div class="display-digital">
+                <div class="display-digital__clock"></div>
+
+                <!-- alarm start -->
+                <div class="dialer">
+                    <div class="wrapper">
+                        <div class="set-alarm">
+                            <p class="set-alarm-text set-alarm-text1">set</p><span> </span>
+                            <p class="set-alarm-text set-alarm-text2">alarm</p>
+                        </div>
+                        <!-- set alarm time -->
+                        <div class="hrs-col">
+                            <!-- DOM will be manipulated here -->
+                        </div>
+                        <p class="set-alarm-text"> : </p>
+                        <div class="min-col">
+                            <!-- DOM will be manipulated here -->
+                        </div>
+                    </div>
+                </div>
+                <!-- alarm end -->
+
+                <label class="alarm-switch">
+                    <input class="checker" type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                
+                <div class="time-till-alarm">
+                    <p class="set-alarm-text">time untill next alarm</p>
+                    <div class="time-till-display">
+                        <p class="time-till-display__hrs"></p>
+                        <p><small>hr</small></p>
+                        <p class="time-till-display__mins"></p>
+                        <p><small>min</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
